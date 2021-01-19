@@ -10214,14 +10214,14 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20210119001611504" modified="20210119112041780" tags="$:/tags/Stylesheet" title="$:/me/style" type="text/vnd.tiddlywiki">
+<div created="20210119001611504" modified="20210119165444831" tags="$:/tags/Stylesheet" title="$:/me/style" type="text/vnd.tiddlywiki">
 <pre>section.tc-story-river{
     display: grid;
-    height: 100% !important;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: auto auto auto;
     justify-content: space-evenly;
 }
+
 section.story-backdrop{
     display: none;
 }
@@ -10250,8 +10250,8 @@ section.story-backdrop{
 
 &lt;$list filter=&quot;[tag[Menu]menu[closed]]&quot;&gt; 
 [data-tiddler-title^=&quot;&lt;$view field=title/&gt;&quot;] {
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 40%;
+    padding-bottom: 40%;
 }
 [data-tiddler-title^=&quot;&lt;$view field=title/&gt;&quot;] .tc-titlebar button {
     position: absolute;
@@ -10273,6 +10273,53 @@ section.story-backdrop{
 
 [data-tags*=&quot;Menu&quot;] .tc-subtitle , .tc-tags-wrapper{
     display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+        section.tc-story-river{
+        display: grid;
+        padding-top: 5%;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto auto;
+        justify-content: space-evenly;
+    }
+
+&lt;$list filter=&quot;[enlist{$:/StoryList!!list}!tag[Menu]]&quot;&gt; 
+[data-tiddler-title^=&quot;&lt;$view field=title/&gt;&quot;] {
+    grid-column: 1/ span 2;
+    grid-row:  span 2;
+}
+&lt;/$list&gt; 
+
+&lt;$list filter=&quot;[tag[Menu]menu[open]]&quot;&gt; 
+[data-tiddler-title^=&quot;&lt;$view field=title/&gt;&quot;] {
+    grid-column: 1 / span 2;
+    grid-row: span 2;
+}
+[data-tiddler-title^=&quot;&lt;$view field=title/&gt;&quot;] .tc-tiddler-body {
+    display: block;
+    width: 90%;
+    padding-left: 5%;
+}
+[data-tiddler-title^=&quot;&lt;$view field=title/&gt;&quot;] .tc-title {
+    display: none;
+}
+&lt;/$list&gt; 
+
+&lt;$list filter=&quot;[tag[Menu]menu[closed]]&quot;&gt; 
+[data-tiddler-title^=&quot;&lt;$view field=title/&gt;&quot;] {
+    padding-top: 40%;
+    padding-bottom: 40%;
+}
+[data-tiddler-title^=&quot;&lt;$view field=title/&gt;&quot;] .tc-titlebar button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 }</pre>
 </div>
 <div author="Felix Küppers" core-version="&gt;=5.1.5" dependents="" description="Respawn – Open default tiddlers when river is empty" list="Configuration License Readme" plugin-type="plugin" released="" source="https://github.com/felixhayashi/TW5-respawn" title="$:/plugins/felixhayashi/respawn" type="application/json" version="0.0.3">
@@ -10308,7 +10355,7 @@ section.story-backdrop{
 <div created="20210119005831380" modified="20210119005831380" title="$:/state/advancedsearch/currentTab">
 <pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
-<div created="20210119001412957" modified="20210119114206544" title="$:/state/sidebar">
+<div created="20210119001412957" modified="20210119165508717" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210119005831380" modified="20210119005831380" title="$:/state/tab--1498284803">
@@ -10326,7 +10373,7 @@ section.story-backdrop{
 <div created="20210119003025377" modified="20210119003025377" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/System</pre>
 </div>
-<div created="20210119002954890" modified="20210119112602794" title="$:/state/tab/sidebar--595412856">
+<div created="20210119002954890" modified="20210119165417222" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
@@ -10450,10 +10497,10 @@ section.story-backdrop{
 <div created="20210119112539938" modified="20210119112555905" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20210119001422061" menu="closed" modified="20210119114401922" tags="Menu" title="Item 1">
+<div created="20210119001422061" menu="closed" modified="20210119165504180" tags="Menu" title="Item 1">
 <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce [[malesuada sapien]] vitae lacinia dictum. Suspendisse eget felis quam. Vestibulum ut ex ultrices, condimentum nisl ut, finibus ante. Quisque et malesuada sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin eu egestas libero. Aenean id ipsum laoreet tellus ultrices luctus. Morbi facilisis urna vel elit blandit, tempus pulvinar sem efficitur. Duis auctor nisl eros. Curabitur sed neque lobortis, consequat elit non, ultricies purus. Phasellus venenatis dictum sem, vel pulvinar enim aliquam vitae. Vivamus ac arcu tortor. Vivamus et feugiat augue. Cras fermentum pellentesque massa. Ut sit amet tristique ligula. Cras sodales et nulla sed condimentum.</pre>
 </div>
-<div created="20210119001428030" menu="closed" modified="20210119114401923" tags="Menu" title="Item 2">
+<div created="20210119001428030" menu="closed" modified="20210119165504181" tags="Menu" title="Item 2">
 <pre>Vestibulum nec condimentum enim. Nullam posuere, purus eu interdum vehicula, purus neque varius nunc, eu luctus odio lorem ut velit. Sed at lorem nunc. In hac habitasse platea dictumst. Quisque ut dui ac dui fringilla auctor. Morbi pretium, velit vel lobortis rutrum, ex justo fringilla felis, eu vulputate diam nunc vitae lectus. 
 
 &lt;&lt;&lt;
@@ -10464,10 +10511,10 @@ Praesent nisl metus, consectetur id turpis semper, imperdiet malesuada nunc. Sed
 
 Sed commodo eros non libero laoreet consectetur. Donec bibendum, diam a volutpat fringilla, nisl diam congue arcu, et suscipit ipsum purus at purus. Donec luctus turpis eu tristique luctus. Proin faucibus lobortis dolor, at maximus dolor cursus non. Aenean a sagittis ex, non scelerisque nunc. Aliquam at porttitor quam, eu rhoncus quam. Integer rutrum elementum tortor at varius. Nunc rhoncus nunc elit. Cras auctor ante in nisl aliquam aliquam. Maecenas varius ex at ante malesuada, sit amet porta nunc scelerisque.</pre>
 </div>
-<div created="20210119001432521" menu="closed" modified="20210119114401923" tags="Menu" title="Item 3">
+<div created="20210119001432521" menu="closed" modified="20210119165504181" tags="Menu" title="Item 3">
 <pre>Mauris velit metus, consequat non sapien eu, imperdiet porttitor nulla. Quisque mollis venenatis mollis. Duis id tellus sodales, ultricies dui quis, bibendum purus. Aenean semper interdum felis, ac fringilla dolor semper quis. Sed molestie ullamcorper metus. Aliquam id ligula id nibh suscipit dapibus. Morbi ullamcorper hendrerit lacus ultricies euismod. Curabitur maximus rutrum condimentum. Maecenas a diam lobortis, dignissim ipsum vel, mattis arcu. Nunc quis blandit augue, vitae elementum arcu. Phasellus ultricies nisl eget libero fermentum scelerisque. Suspendisse nec leo et enim ornare accumsan. Maecenas finibus cursus mauris id aliquam. Aliquam erat volutpat. Vestibulum sagittis elit urna, quis iaculis nunc posuere eu. Fusce convallis odio sed ligula convallis, sit amet consequat libero eleifend.</pre>
 </div>
-<div created="20210119001436340" menu="closed" modified="20210119114401923" tags="Menu" title="Item 4">
+<div created="20210119001436340" menu="closed" modified="20210119165504181" tags="Menu" title="Item 4">
 <pre>---
 
 Menu items:
