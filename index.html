@@ -261,8 +261,8 @@ exports.startup = function() {
 <div bag="default" created="20151007165524815" creator="Tobias Beer" modified="20210119112823288" revision="0" tags="" title="$:/config/HideSidebarOnStartup" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
 </div>
-<div created="20210119005043870" modified="20210119114231233" title="$:/config/Manager/System">
-<pre></pre>
+<div created="20210119005043870" modified="20210119113048332" title="$:/config/Manager/System">
+<pre>system</pre>
 </div>
 <div created="20210119112507067" modified="20210119112507067" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>show</pre>
@@ -10143,9 +10143,9 @@ exports.startup = function() {
     }
 }</pre>
 </div>
-<div caption="{{$:/core/images/close-button}} {{$:/language/Buttons/Close/Caption}}" created="20210119011207402" description="{{$:/language/Buttons/Close/Hint}}" modified="20210119114400331" tags="$:/tags/ViewToolbar" title="$:/core/ui/Buttons/close">
+<div caption="{{$:/core/images/close-button}} {{$:/language/Buttons/Close/Caption}}" created="20210119011207402" description="{{$:/language/Buttons/Close/Hint}}" modified="20210119011442855" tags="$:/tags/ViewToolbar" title="$:/core/ui/Buttons/close">
 <pre>\whitespace trim
-&lt;$button message=&quot;tm-home&quot; tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;$button message=&quot;tm-close-tiddler&quot; tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
 &lt;$list filter=&quot;[tag[Menu]]&quot;&gt;
 &lt;$action-setfield $tiddler=&lt;&lt;currentTiddler&gt;&gt; menu=&quot;closed&quot;/&gt;
 &lt;/$list&gt;
@@ -10308,7 +10308,7 @@ section.story-backdrop{
 <div created="20210119005831380" modified="20210119005831380" title="$:/state/advancedsearch/currentTab">
 <pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
-<div created="20210119001412957" modified="20210119114206544" title="$:/state/sidebar">
+<div created="20210119001412957" modified="20210119113127063" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210119005831380" modified="20210119005831380" title="$:/state/tab--1498284803">
@@ -10450,10 +10450,10 @@ section.story-backdrop{
 <div created="20210119112539938" modified="20210119112555905" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20210119001422061" menu="closed" modified="20210119114401922" tags="Menu" title="Item 1">
+<div created="20210119001422061" menu="closed" modified="20210119113117976" tags="Menu" title="Item 1">
 <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce [[malesuada sapien]] vitae lacinia dictum. Suspendisse eget felis quam. Vestibulum ut ex ultrices, condimentum nisl ut, finibus ante. Quisque et malesuada sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin eu egestas libero. Aenean id ipsum laoreet tellus ultrices luctus. Morbi facilisis urna vel elit blandit, tempus pulvinar sem efficitur. Duis auctor nisl eros. Curabitur sed neque lobortis, consequat elit non, ultricies purus. Phasellus venenatis dictum sem, vel pulvinar enim aliquam vitae. Vivamus ac arcu tortor. Vivamus et feugiat augue. Cras fermentum pellentesque massa. Ut sit amet tristique ligula. Cras sodales et nulla sed condimentum.</pre>
 </div>
-<div created="20210119001428030" menu="closed" modified="20210119114401923" tags="Menu" title="Item 2">
+<div created="20210119001428030" menu="closed" modified="20210119113117976" tags="Menu" title="Item 2">
 <pre>Vestibulum nec condimentum enim. Nullam posuere, purus eu interdum vehicula, purus neque varius nunc, eu luctus odio lorem ut velit. Sed at lorem nunc. In hac habitasse platea dictumst. Quisque ut dui ac dui fringilla auctor. Morbi pretium, velit vel lobortis rutrum, ex justo fringilla felis, eu vulputate diam nunc vitae lectus. 
 
 &lt;&lt;&lt;
@@ -10464,10 +10464,10 @@ Praesent nisl metus, consectetur id turpis semper, imperdiet malesuada nunc. Sed
 
 Sed commodo eros non libero laoreet consectetur. Donec bibendum, diam a volutpat fringilla, nisl diam congue arcu, et suscipit ipsum purus at purus. Donec luctus turpis eu tristique luctus. Proin faucibus lobortis dolor, at maximus dolor cursus non. Aenean a sagittis ex, non scelerisque nunc. Aliquam at porttitor quam, eu rhoncus quam. Integer rutrum elementum tortor at varius. Nunc rhoncus nunc elit. Cras auctor ante in nisl aliquam aliquam. Maecenas varius ex at ante malesuada, sit amet porta nunc scelerisque.</pre>
 </div>
-<div created="20210119001432521" menu="closed" modified="20210119114401923" tags="Menu" title="Item 3">
+<div created="20210119001432521" menu="closed" modified="20210119113117976" tags="Menu" title="Item 3">
 <pre>Mauris velit metus, consequat non sapien eu, imperdiet porttitor nulla. Quisque mollis venenatis mollis. Duis id tellus sodales, ultricies dui quis, bibendum purus. Aenean semper interdum felis, ac fringilla dolor semper quis. Sed molestie ullamcorper metus. Aliquam id ligula id nibh suscipit dapibus. Morbi ullamcorper hendrerit lacus ultricies euismod. Curabitur maximus rutrum condimentum. Maecenas a diam lobortis, dignissim ipsum vel, mattis arcu. Nunc quis blandit augue, vitae elementum arcu. Phasellus ultricies nisl eget libero fermentum scelerisque. Suspendisse nec leo et enim ornare accumsan. Maecenas finibus cursus mauris id aliquam. Aliquam erat volutpat. Vestibulum sagittis elit urna, quis iaculis nunc posuere eu. Fusce convallis odio sed ligula convallis, sit amet consequat libero eleifend.</pre>
 </div>
-<div created="20210119001436340" menu="closed" modified="20210119114401923" tags="Menu" title="Item 4">
+<div created="20210119001436340" menu="closed" modified="20210119113117976" tags="Menu" title="Item 4">
 <pre>---
 
 Menu items:
